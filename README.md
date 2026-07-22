@@ -440,6 +440,39 @@ A plataforma após ser finalizada poderá ser utilizada por:
 
 ---
 
+
+## Tecnologias
+
+O sistema será desenvolvido utilizando:
+
+* **Java** — linguagem utilizada no desenvolvimento do back-end.
+* **Spring Boot** — framework utilizado para construção da API, regras de negócio, segurança e integração com os bancos de dados.
+* **React** — biblioteca utilizada para desenvolvimento da interface e visualização interativa dos grafos.
+* **MySQL** — banco de dados relacional principal, responsável pelo armazenamento de usuários, mapas, conteúdos, fontes e demais dados transacionais.
+* **Neo4j** — banco de dados orientado a grafos, utilizado para consultas mais complexas, como exploração de caminhos, conexões indiretas, recomendações e análise dos relacionamentos entre os elementos.
+
+### Arquitetura do Banco de Dados
+
+```text
+MySQL
+├── Usuários e permissões
+├── Mapas de conhecimento
+├── Conteúdos editoriais
+├── Fontes históricas
+└── Dados transacionais
+
+Neo4j
+├── Nós e relacionamentos
+├── Caminhos entre elementos
+├── Conexões diretas e indiretas
+├── Recomendações
+└── Consultas avançadas de grafos
+```
+
+O MySQL será utilizado como banco de dados principal, enquanto o Neo4j funcionará como tecnologia especializada para consultas e análises complexas sobre o grafo de conhecimento.
+
+A decisão técnica de usar ambos os banco é pensando em fins de aprendizagem.
+
 ## Status do projeto
 
 O projeto encontra-se em fase de planejamento e definição dos requisitos.
