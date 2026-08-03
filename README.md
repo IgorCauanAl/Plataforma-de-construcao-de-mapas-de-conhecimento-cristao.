@@ -51,7 +51,7 @@ A plataforma também buscará preservar a pluralidade das tradições cristãs. 
 
    Permitir ferramentas para o usuario: 
 
-*  Construir mapas de conhecimento cristão visuais, estruturados e fundamentados.
+*   Construir mapas de conhecimento cristão visuais, estruturados e fundamentados.
 
    * Relacionar o cristianismo com história, filosofia, ciência, arqueologia e outras áreas.
 
