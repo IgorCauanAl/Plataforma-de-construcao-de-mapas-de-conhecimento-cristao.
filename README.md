@@ -6,425 +6,90 @@
 
 O **Mapa do Conhecimento Cristão** é uma plataforma que permite ao usuário construir sua própria linha de estudos por meio de grafos interativos.
 
-O sistema relacionará pessoas, acontecimentos históricos, doutrinas, tradições, obras, documentos, textos bíblicos e diferentes áreas do conhecimento conectadas ao cristianismo.
+O sistema relacionará pessoas, acontecimentos históricos, doutrinas, tradições, obras, documentos, textos bíblicos e diferentes áreas do conhecimento conectadas ao cristianismo com base no estudo do usuário.
 
 Cada elemento será representado como um nó do grafo, enquanto as conexões demonstrarão como esses elementos se relacionam.
 
+O módulo central é o grafo de conhecimento, que funcionará como uma grande rede de conexões. Dentro dele, o usuário poderá criar submapas temáticos (como "Cristianismo primitivo", "Reforma Protestante" ou "Filosofia e fé"), dando uma visão macro do seu aprendizado. Cada submapa poderá conectar‑se a outros, formando um ecossistema de conhecimento pessoal e expansível.
+
+Em cada nó o usuário pode desenvolver suas anotações e terá apoio de classificações que é o tipo do nó, como biografia, fontes históricas, debates, doutrina e conceitos, geografia histórica, concílio ou acontecimento ou textos biblícos.
+
 Exemplo:
 
-```text
+```text 
 [Gamaliel]
     └── INSTRUIU ──> [Paulo de Tarso]
             ├── Explicação da relação
             └── Fonte: Atos 22:3
-```
 
-Outro exemplo:
+            
+[Agostinho]
+   ├── POSSUI BIOGRAFIA
+   ├── ESCREVEU ──> [Confissões]
+   ├── PARTICIPOU DE ──> [Debate sobre a graça]
+   ├── INFLUENCIOU ──> [Tradições cristãs]
+   └── RELACIONA‑SE COM ──> [Doutrina do pecado original]
 
-```text
-[Astronomia]
-    └── RELACIONA-SE COM ──> [Calendário cristão]
-            ├── Contexto histórico
-            ├── Interpretação
-            └── Fontes utilizadas
+ Outro exemplo:  
+ 
+    [Astronomia]
+        └── RELACIONA-SE COM ──> [Calendário cristão]
+                ├── Contexto histórico
+                ├── Interpretação
+                └── Fontes utilizadas
+
 ```
+                
+
 
 O objetivo é permitir que o usuário organize seus estudos de maneira visual, estruturada e fundamentada, identificando relações entre diferentes períodos, autores, conceitos e áreas do conhecimento.
 
 A plataforma também buscará preservar a pluralidade das tradições cristãs. Diferentes interpretações poderão ser apresentadas juntamente com seus respectivos contextos, argumentos e fontes.
 
----
 
-## Objetivos
+### Objetivos
 
-* Permitir a construção de mapas de conhecimento cristão.
-* Relacionar o cristianismo com história, filosofia, ciência, arqueologia e outras áreas.
-* Organizar pessoas, obras, doutrinas, movimentos e acontecimentos.
-* Registrar a explicação e as fontes de cada relação.
-* Facilitar a exploração de conexões diretas e indiretas.
-* Comparar interpretações de diferentes autores e tradições.
-* Disponibilizar visualizações históricas, geográficas e cronológicas.
-* Incentivar estudos fundamentados e rastreáveis.
+   Permitir ferramentas para o usuario: 
 
----
+    * Construir mapas de conhecimento cristão visuais, estruturados e fundamentados.
 
-# Módulos
+   * Relacionar o cristianismo com história, filosofia, ciência, arqueologia e outras áreas.
 
-## 1. Grafo de conhecimento
+   * Organizar pessoas, obras, doutrinas, movimentos e acontecimentos.
 
-Módulo principal da plataforma.
+   * Registrar explicações e fontes em cada relação.
 
-Permitirá criar mapas formados por nós e relacionamentos.
+   * Facilitar a exploração de conexões diretas e indiretas.
 
-Os nós poderão representar:
+   * Comparar interpretações de diferentes tradições.
 
-* Pessoas;
-* conceitos;
-* doutrinas;
-* obras;
-* documentos;
-* textos bíblicos;
-* acontecimentos;
-* movimentos;
-* tradições;
-* concílios;
-* locais históricos;
-* áreas do conhecimento.
+   * Disponibilizar visualizações históricas, geográficas e cronológicas.
 
-Os relacionamentos poderão conter:
+   * Incentivar estudos rastreáveis e respeitar a pluralidade das tradições cristãs.
 
-* Tipo da relação;
-* direção da relação;
-* explicação;
-* contexto histórico;
-* perspectiva interpretativa;
-* fontes;
-* observações do autor.
+   ---
 
-Exemplo:
+### Classificações disponíveis
 
-```text
-[Agostinho]
-    └── ESCREVEU ──> [Confissões]
-```
+- **Biografia** — para pessoas: período, resumo, obras, tradição, linha do tempo pessoal etc.
+- **Debate** — questões com diferentes perspectivas, argumentos, contra‑argumentos e fontes.
+- **Fonte Histórica** — obras, manuscritos, artigos, artefatos; classificação extra como fonte primária, secundária, hipótese do autor etc.
+- **Tradição, Movimento ou Corrente** — vertentes cristãs (luteranismo, pentecostalismo, patrística…).
+- **Doutrina ou Conceito** — definições, origem, contexto histórico, tradições que o interpretam.
+- **Geografia Histórica** — cidades, rotas, impérios, locais de concílios.
+- **Concílio ou Acontecimento** — eventos históricos, participantes, decisões, consequências.
+- **Texto Bíblico** — referências às Escrituras e suas relações com outros nós.
 
-O usuário poderá expandir os nós, explorar conexões e visualizar diferentes caminhos entre os elementos.
+Cada nó pode carregar **múltiplas classificações** (ex.: uma pessoa que também é fonte histórica).  
+Os **relacionamentos** também são ricos: você define tipo, direção, explicação, contexto histórico, fontes e observações.
 
----
 
-## 2. Biografias
+### Submapas: a visão macro
 
-Módulo destinado ao registro e à consulta de pessoas relacionadas à história do cristianismo.
+Os submapas são agrupamentos temáticos que você cria livremente.  
+Eles permitem enxergar grandes áreas do seu estudo sem se perder nos detalhes.  
+Submapas podem conectar‑se entre si — por exemplo, “Cristianismo primitivo” ligando‑se a “Judaísmo do Segundo Templo” — , o usuario fundamentar a relação mostrando como os temas se relacionam na sua jornada de conhecimento.
 
-Cada biografia poderá apresentar:
-
-* Nome;
-* período histórico;
-* local de nascimento;
-* resumo biográfico;
-* tradição ou movimento relacionado;
-* obras produzidas;
-* acontecimentos dos quais participou;
-* pessoas relacionadas;
-* doutrinas defendidas ou criticadas;
-* fontes históricas;
-* linha do tempo pessoal.
-
-As informações da biografia poderão ser conectadas automaticamente aos elementos existentes no grafo.
-
----
-
-## 3. Debates do Cristianismo
-
-Módulo para organizar debates teológicos, históricos, filosóficos e sociais relacionados ao cristianismo.
-
-Cada debate poderá conter:
-
-* Pergunta central;
-* contexto histórico;
-* diferentes posições;
-* argumentos;
-* contra-argumentos;
-* autores relacionados;
-* tradições relacionadas;
-* textos bíblicos utilizados;
-* obras e documentos;
-* fontes de fundamentação.
-
-O módulo não terá como objetivo determinar automaticamente uma posição como verdadeira ou falsa, mas apresentar as diferentes perspectivas e suas respectivas fundamentações.
-
----
-
-## 4. Fontes Históricas
-
-Módulo responsável pela organização das evidências e referências utilizadas na construção do conhecimento.
-
-Poderá conter:
-
-* Obras literárias;
-* documentos históricos;
-* manuscritos;
-* cartas;
-* registros arqueológicos;
-* inscrições;
-* artefatos;
-* artigos acadêmicos;
-* livros;
-* imagens;
-* mapas;
-* documentos de instituições;
-* textos bíblicos;
-* interpretações do autor.
-
-As fontes poderão fundamentar:
-
-* Nós;
-* relacionamentos;
-* biografias;
-* debates;
-* acontecimentos;
-* doutrinas;
-* interpretações.
-
-Também poderão ser classificadas como:
-
-* Fonte primária;
-* fonte secundária;
-* evidência arqueológica;
-* interpretação acadêmica;
-* tradição documental;
-* hipótese do autor;
-* fonte contestada.
-
----
-
-## 5. Linha do Tempo Histórica
-
-Módulo para visualizar pessoas, obras, movimentos e acontecimentos em ordem cronológica.
-
-Poderá apresentar:
-
-* Nascimentos e falecimentos;
-* publicação de obras;
-* realização de concílios;
-* surgimento de movimentos;
-* divisões históricas;
-* acontecimentos políticos relacionados;
-* descobertas arqueológicas;
-* desenvolvimento de doutrinas.
-
-O sistema deverá aceitar datas aproximadas, intervalos históricos e acontecimentos sem data exata.
-
-Exemplos:
-
-```text
-Século I
-Entre 48 e 49 d.C.
-Por volta de 325 d.C.
-Data desconhecida
-```
-
----
-
-## 6. Tradições, Movimentos e Correntes
-
-Módulo destinado ao estudo das diferentes tradições e movimentos relacionados ao cristianismo.
-
-Exemplos:
-
-* Cristianismo primitivo;
-* patrística;
-* catolicismo;
-* ortodoxia;
-* luteranismo;
-* calvinismo;
-* anabatismo;
-* anglicanismo;
-* pentecostalismo;
-* movimentos contemporâneos.
-
-Cada tradição ou movimento poderá ser relacionado a:
-
-* Pessoas;
-* acontecimentos;
-* obras;
-* documentos;
-* doutrinas;
-* regiões;
-* debates;
-* movimentos anteriores;
-* movimentos influenciados.
-
----
-
-## 7. Doutrinas e Conceitos
-
-Módulo para catalogar e relacionar conceitos teológicos, filosóficos e históricos.
-
-Exemplos:
-
-* Trindade;
-* cristologia;
-* graça;
-* justificação;
-* livre-arbítrio;
-* predestinação;
-* escatologia;
-* soteriologia;
-* eclesiologia;
-* apologética.
-
-Cada conceito poderá apresentar:
-
-* Definição;
-* contexto histórico;
-* origem;
-* conceitos relacionados;
-* autores relacionados;
-* tradições que o interpretam;
-* debates;
-* obras;
-* textos bíblicos;
-* fontes.
-
----
-
-## 8. Comparador de Interpretações
-
-Módulo que permitirá comparar diferentes interpretações sobre um mesmo conceito cristão.
-
-Exemplo:
-
-```text
-Conceito: Batismo
-
-Perspectiva A
-Perspectiva B
-Perspectiva C
-```
-
-Cada interpretação poderá conter:
-
-* Autor ou tradição;
-* definição;
-* argumentos;
-* textos bíblicos utilizados;
-* obras utilizadas;
-* período histórico;
-* críticas recebidas;
-* pontos semelhantes;
-* pontos divergentes.
-
-O objetivo será apresentar as diferenças de maneira organizada, contextualizada e fundamentada.
-
----
-
-## 9. Cruzadas Bíblicas
-
-Módulo destinado à conexão entre textos bíblicos, toda a relação é apenas da bíblia.
-
-Uma passagem poderá ser relacionada a:
-
-* Pessoas;
-* locais;
-* acontecimentos;
-* doutrinas;
-* conceitos;
-* debates;
-* tradições;
-* interpretações;
-* obras;
-
-Exemplo:
-
-```text
-[Atos 22:3]
-    ├── MENCIONA ──> [Paulo]
-    ├── MENCIONA ──> [Gamaliel]
-    └── FUNDAMENTA ──> [Gamaliel instruiu Paulo]
-```
-
-O módulo também permitirá identificar o motivo da relação.
-
----
-
-## 10. Geografia Histórica
-
-Módulo para representar os locais relacionados à história do cristianismo.
-
-Poderá apresentar:
-
-* Cidades;
-* regiões;
-* impérios;
-* rotas de viagem;
-* locais de concílios;
-* locais arqueológicos;
-* igrejas históricas;
-* locais de nascimento;
-* locais de produção de obras;
-* regiões de expansão de movimentos.
-
-Exemplo:
-
-```text
-[Paulo]
-    ├── NASCEU_EM ──> [Tarso]
-    ├── VISITOU ──> [Corinto]
-    └── VIAJOU_PARA ──> [Roma]
-```
-
-O módulo poderá combinar informações geográficas com a linha do tempo histórica.
-
----
-
-## 11. Concílios e Acontecimentos Históricos
-
-Módulo destinado à organização de concílios, encontros, reformas, divisões e outros acontecimentos relevantes.
-
-Exemplos:
-
-* Concílio de Jerusalém;
-* Concílio de Niceia;
-* Concílio de Constantinopla;
-* Grande Cisma;
-* Reforma Protestante;
-* Contrarreforma;
-* Concílio Vaticano II.
-
-Cada acontecimento poderá conter:
-
-* Nome;
-* período;
-* localização;
-* contexto;
-* participantes;
-* decisões;
-* documentos produzidos;
-* debates envolvidos;
-* consequências;
-* movimentos relacionados;
-* fontes históricas.
-
-Exemplo:
-
-```text
-[Concílio de Niceia]
-    ├── DEBATEU ──> [Natureza de Cristo]
-    ├── PRODUZIU ──> [Credo Niceno]
-    └── TEVE COMO PARTICIPANTE ──> [Atanásio]
-```
-
----
-
-## Integração entre os módulos
-
-Alguns módulos não funcionarão como áreas completamente isoladas, os seguintes poderão ser relacionados no grafo:
-
-1)Biografias
-2)Debates
-3)Fontes Históricas
-4)Tradições, Movimentos e Correntes
-5)Doutrinas e Conceitos
-6)Geografia Histórica
-7)Concílios e acontecimentos históricos
-
-Todos utilizarão os elementos existentes no grafo de conhecimento.
-
-Exemplo:
-
-```text
-[Agostinho]
-    ├── POSSUI_BIOGRAFIA
-    ├── ESCREVEU ──> [Confissões]
-    ├── PARTICIPOU_DE ──> [Debate sobre a graça]
-    ├── INFLUENCIOU ──> [Tradições cristãs]
-    └── RELACIONA-SE_COM ──> [Doutrina do pecado original]
-```
-
-Dessa forma, uma informação cadastrada poderá ser utilizada em diferentes visualizações e contextos sem a necessidade de duplicação.
-
----
 
 ## Público-alvo
 
