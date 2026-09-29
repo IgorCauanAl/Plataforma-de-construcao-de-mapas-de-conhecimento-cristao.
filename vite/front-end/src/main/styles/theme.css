@@ -1,0 +1,174 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-text-ink: #1b2a38;
+
+  --color-primary: #16334a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2e4a62;
+  --color-on-primary-container: #9db9d5;
+  --color-primary-fixed: #cde5ff;
+  --color-primary-fixed-dim: #adcae6;
+  --color-on-primary-fixed: #001d32;
+  --color-on-primary-fixed-variant: #2d4961;
+  --color-primary-dark: #1f3448;
+  --color-inverse-primary: #adcae6;
+
+  --color-secondary: #705b3f;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f8dbb7;
+  --color-on-secondary-container: #745f43;
+  --color-secondary-fixed: #fbdeba;
+  --color-secondary-fixed-dim: #dec2a0;
+  --color-on-secondary-fixed: #271904;
+  --color-on-secondary-fixed-variant: #574329;
+
+  --color-tertiary: #591e0e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #763421;
+  --color-on-tertiary-container: #fb9f85;
+  --color-tertiary-fixed: #ffdbd1;
+  --color-tertiary-fixed-dim: #ffb5a1;
+  --color-on-tertiary-fixed: #3b0900;
+  --color-on-tertiary-fixed-variant: #753321;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-status-error: #b23a3a;
+  --color-status-success: #5f7a4b;
+  --color-status-warning: #c9922e;
+
+  --color-background: #f7f9ff;
+  --color-on-background: #0d1d2a;
+  --color-surface: #f7f9ff;
+  --color-on-surface: #0d1d2a;
+  --color-surface-bright: #f7f9ff;
+  --color-surface-dim: #cbdced;
+  --color-surface-white: #ffffff;
+  --color-surface-tint: #45617a;
+  --color-surface-variant: #d4e4f6;
+  --color-on-surface-variant: #43474d;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #ecf4ff;
+  --color-surface-container: #e1efff;
+  --color-surface-container-high: #d9eafc;
+  --color-surface-container-highest: #d4e4f6;
+
+  --color-outline: #73777d;
+  --color-outline-variant: #c3c7cd;
+  --color-inverse-surface: #22323f;
+  --color-inverse-on-surface: #e7f2ff;
+  --color-scrim: #000000;
+
+  --color-parchment-canvas: #f6efe2;
+  --color-parchment-border: #dccdb6;
+  --color-terracotta-hover: #8b4a3a;
+
+  --color-category-biography: #2e4a62;
+  --color-category-scripture: #6b4a3a;
+  --color-category-doctrine: #b5654f;
+  --color-category-council: #7a4a6b;
+  --color-category-tradition: #5f7a4b;
+  --color-category-source: #a8875a;
+  --color-category-geography: #3f7c85;
+  --color-category-debate: #e8586a;
+
+  --font-display-lg: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-display-lg-mobile: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-headline-lg: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-headline-md: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-headline-sm: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-body-lg: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-body-md: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-body-sm: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-label-lg: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-label-md: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-label-sm: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --text-display-lg: 32px;
+  --text-display-lg--line-height: 40px;
+  --text-display-lg--font-weight: 600;
+  --text-display-lg-mobile: 26px;
+  --text-display-lg-mobile--line-height: 34px;
+  --text-display-lg-mobile--font-weight: 600;
+  --text-headline-lg: 28px;
+  --text-headline-lg--line-height: 36px;
+  --text-headline-lg--font-weight: 600;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 600;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.01em;
+  --text-label-lg--font-weight: 600;
+  --text-label-md: 13px;
+  --text-label-md--line-height: 18px;
+  --text-label-md--font-weight: 500;
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.02em;
+  --text-label-sm--font-weight: 500;
+
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-margin-sm: 1rem;
+  --spacing-margin: 2rem;
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@utility rounded-full {
+  border-radius: var(--radius-full);
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
